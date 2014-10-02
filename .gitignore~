@@ -46,19 +46,6 @@ coverage.xml
 
 # Django stuff:
 *.log
-*.pyc
-vendor
-.idea
-.idea/*
-components
-bower_components
-migrations
-media
-bower.json
-bower_components
-node_modules
-static
-bin
 
 # Sphinx documentation
 docs/_build/
