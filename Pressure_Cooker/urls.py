@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'Pressure_Cooker.views.home', name='home'),
+    url(r'^$', include('main_app.urls')),
     # url(r'^Pressure_Cooker/', include('Pressure_Cooker.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
