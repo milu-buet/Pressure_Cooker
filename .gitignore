@@ -53,11 +53,9 @@ vendor
 components
 bower_components
 migrations
-media
 bower.json
 bower_components
 node_modules
-static
 bin
 *~
 
