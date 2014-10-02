@@ -59,6 +59,7 @@ bower_components
 node_modules
 static
 bin
+*~
 
 # Sphinx documentation
 docs/_build/
