@@ -7,5 +7,6 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'main_app.views.home'),
+    url(r'^aview/$', 'main_app.views.aview'),
 )
 
