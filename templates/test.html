@@ -2,12 +2,37 @@
 <html>
 <head>
     <title></title>
+    <script src="http://127.0.0.1:8000/static/js/jquery.min.js"></script>
     <script>
+
+        function tk(){
+
+                       $.ajax({
+
+                        url : "http://127.0.0.1:8000/",
+                        type: "POST",
+                        data : {
+                                "patient_id":"1"
+                        },
+                        success: function(data, textStatus, jqXHR)
+                        {
+                            console.log(data);
+
+                        },
+                        error: function (jqXHR, textStatus, errorThrown)
+                        {
+
+                        }
+                    });
+
+
+        }
+
 
     </script>
 </head>
 <body>
-<button id="1">Test Click</button>
+<button id="1" onclick="tk()">Test Click</button>
 
 </body>
 </html>
