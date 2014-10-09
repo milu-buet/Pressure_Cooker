@@ -70,7 +70,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join(BASE_DIR, '../../static').replace('\\','/'),
+    os.path.join(BASE_DIR, '../static').replace('\\','/'),
 )
 
 # List of finder classes that know how to find static files in
@@ -120,6 +120,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'main_app',
+    'djangobower',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
@@ -179,4 +180,14 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'dajaxice.finders.DajaxiceFinder',
     'djangobower.finders.BowerFinder',
+)
+
+
+
+BOWER_COMPONENTS_ROOT = BASE_DIR
+BOWER_PATH = '/usr/bin/bower'
+
+BOWER_INSTALLED_APPS = (
+    'jquery#2.0.2',
+
 )
