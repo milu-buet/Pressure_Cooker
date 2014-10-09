@@ -58,6 +58,7 @@ bower_components
 node_modules
 bin
 *~
+Pressure_Cooker/settings/__init__.py
 
 # Sphinx documentation
 docs/_build/
