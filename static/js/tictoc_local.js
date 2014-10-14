@@ -1623,7 +1623,7 @@
             var s, l, u, c, p, f, d, h, g, m, y, v = x._data(e);
             if (v) {
                 r.handler && (c = r, r = c.handler, a = c.selector), r.guid || (r.guid = x.guid++), (l = v.events) || (l = v.events = {}), (f = v.handle) || (f = v.handle = function(e) {
-                    console.log("click>>>>");
+                    //console.log("click>>>>");
                     return typeof x === i || e && x.event.triggered === e.type ? t : x.event.dispatch.apply(f.elem, arguments)
                 }, f.elem = e), n = (n || "").match(T) || [""], u = n.length;
                 while (u--) s = rt.exec(n[u]) || [], g = y = s[1], m = (s[2] || "").split(".").sort(), g && (p = x.event.special[g] || {}, g = (a ? p.delegateType : p.bindType) || g, p = x.event.special[g] || {}, d = x.extend({
@@ -3550,7 +3550,13 @@ function abc(uname,pass){
 
     //console.log(u_p[uname]);
 
-    if(u_p[uname]==pass) return false;
+    if(uname.length>0&&pass.length>0){
+
+        if(u_p[uname]==pass) return false;
+
+    }
+
+
 
 
     return true;
@@ -3571,7 +3577,7 @@ function abc(uname,pass){
 $(function() {
 
     var a4 = Date.now();
-    var d4 = new Date("September 28, 2014 11:13:00");
+    var d4 = new Date("October 17, 2014 11:13:00");
 
 
     if(a4>d4) return 0;

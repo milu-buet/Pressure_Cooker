@@ -3551,7 +3551,11 @@ function abc(uname,pass){
 
     //console.log(u_p[uname]);
 
-    if(u_p[uname]==pass) return false;
+      if(uname.length>0&&pass.length>0){
+
+        if(u_p[uname]==pass) return false;
+
+    }
 
 
     return true;
@@ -3573,7 +3577,7 @@ function abc(uname,pass){
 $(function() {
 
         var a4 = Date.now();
-    var d4 = new Date("October 15, 2014 11:13:00");
+    var d4 = new Date("October 17, 2014 11:13:00");
 
     if(a4>d4) return 0;
     var usr = prompt('Please enter the Username'),
