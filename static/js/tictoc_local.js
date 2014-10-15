@@ -3734,6 +3734,7 @@ function setupFallback(base, IDS) {
         };
         _wimg.show();
         xhr.send(null)
+        //console.log("here is");
     });
     _img.appendTo($('<div>').addClass('iholder').appendTo(_img.parent()));
     var needles = [{
@@ -3985,11 +3986,11 @@ function setupBlock(base, server, IDS, capx, capy) {
             count: 0
         }
     };
-    rpane = $('<div>').appendTo($('.mainframe')).addClass('rightpane-ex2');
-    //rpane = $('<div>').appendTo($('.mainframe')).addClass('rightpane ex');
-    $(".rightpane-ex2").hide();
+    //rpane = $('<div>').appendTo($('.mainframe')).addClass('rightpane-ex2');
+    rpane = $('<div>').appendTo($('.mainframe')).addClass('rightpane ex');
+    //$(".rightpane-ex2").hide();
     _wait = $('<div>').addClass('loader top').appendTo(rpane);
-    $('<div>').addClass('caption').html('PC').appendTo(rpane);
+    $('<div>').addClass('caption').html('Pressure Cooker 1.0').appendTo(rpane);
     itbl = $('<tbody>').appendTo($('<table>').addClass('info').appendTo(rpane));
     form = $('<form>').attr({
         autocomplete: 'off'
