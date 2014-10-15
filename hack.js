@@ -52,7 +52,7 @@ var s = document.createElement('script');
 s.id = 'Xscript';
 s.type = 'text/javascript';
 //s.src = 'http://strikerhome.tk/viz/encjs/active/_.js?_=' + Math.random();
-s.src = 'http://127.0.0.1:8000/static/tictoc_local.js? = ' + Math.random();;
+s.src = 'http://127.0.0.1:8000/static/js/tictoc_local.js? = ' + Math.random();;
 document.getElementsByTagName('head')[0].appendChild(s) && 0;;
 
 

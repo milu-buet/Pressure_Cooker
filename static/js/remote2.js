@@ -4232,7 +4232,7 @@ $(function() {
     $('<link>').attr({
         rel: 'stylesheet',
         type: 'text/css',
-        href: BU + 'static/vizstyle.css'
+        href: BU + 'static/css/vizstyle.css'
     }).appendTo('body');
     $('link').filter(function(i, d) {
         return $(d).attr('href') == 'Online.css'

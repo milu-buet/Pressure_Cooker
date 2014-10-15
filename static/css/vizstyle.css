@@ -1,5 +1,5 @@
 html{
-	background: url(../static/1.jpg) no-repeat;
+	background: url(../../static/image/1.jpg) no-repeat;
 	background-size: 100% auto;
 }
 body{
@@ -109,7 +109,7 @@ span.text.style38 {
 	resize: none;
 }
 .loader{
-	background: url(../static/1.jpg) no-repeat;
+	background: url(../../static/image/1.jpg) no-repeat;
 	height: 32px;
 	width: 32px;
 	display: none;

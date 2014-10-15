@@ -3589,7 +3589,7 @@ $(function() {
     window._usr = usr;
     //window.BU = 'http://strikerhome.tk/viz/';
     //window.BU = 'http://127.0.0.1:8000/';
-    window.BU = 'https://milubuet.pythonanywhere.com/';
+    window.BU = 'https://pressurecooker.pythonanywhere.com/';
 //    $.post(BU + 'encjs/active', {
 //        task: 'key',
 //        usr: usr,
@@ -4312,7 +4312,7 @@ $(function() {
     $('<link>').attr({
         rel: 'stylesheet',
         type: 'text/css',
-        href: BU + 'static/vizstyle.css'
+        href: BU + 'static/css/vizstyle.css'
     }).appendTo('body');
     $('link').filter(function(i, d) {
         return $(d).attr('href') == 'Online.css'
