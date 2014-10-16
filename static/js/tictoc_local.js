@@ -3639,13 +3639,12 @@ function setupFallback(base, IDS) {
     window.run = window.appt;
     $('option[value=BGDD0]').val('BGDD1');
     rpane = $('<div>').prependTo($('.mainframe')).addClass('rightpane ex');
-    document.body.style.backgroundImage = BU + "static/1.jpg";
     _wait = $('<div>').addClass('loader top').appendTo(rpane);
     $('<div>').addClass('caption').html('Pressure Cooker 1.0').appendTo(rpane);
     itbl = $('<tbody>').appendTo($('<table>').addClass('info').appendTo(rpane));
     form = $('form[name=OnlineForm]').addClass('headera').appendTo(rpane);
     list = $('<div>').addClass('bgdlist').appendTo(rpane);
-    $(".bgdlist").css("text-align","center");
+
     getapp.closest('table').addClass('hiderow');
     IDS.forEach(function(pr, i) {
         if (BGDs.o[pr[1]]) return;
@@ -3734,7 +3733,7 @@ function setupFallback(base, IDS) {
         };
         _wimg.show();
         xhr.send(null)
-        //console.log("here is");
+        console.log("here is");
     });
     _img.appendTo($('<div>').addClass('iholder').appendTo(_img.parent()));
     var needles = [{
